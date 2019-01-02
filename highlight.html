@@ -1,47 +1,43 @@
 <html >
-     <head>
-          <title>division of screen </title>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-
-             <script>hljs.initHighlightingOnLoad();</script>
-                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/agate.min.css">
-                <style media="screen">
-				.leftside
-				{ 
-				    float:left;
-					height: 200px;
-					margin-left: 10px;
-			
-				}	
-			  .rightside
-				{
-					float: right;
-					width: 600px;
-					margin-right: 10px;
-				}
-		</style>
-	 </head>
-		<body>
-		<div class="leftside">   
-		       <h1>hai...</h1>
-               Enter your name: <input type="text" name="name" value="   "/>  
-		  </div>
-           <div class="rightside">
-            <pre>
-              <code class="html js">
-                function viewSource()
-			  {
-                var source = "<html>";
-			   source+=document.getElementsByTagName('html')[0].innerHTML;
-			   source+="</html>";
-               source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-               source = "<pre>"+source+"</pre>";
-               document.writeln(source);
+  <head>
+    <title></title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/agate.min.css">
+    <style media="screen">
+    .left
+    {
+       float: left;
+      }
+      .right
+      {
+         float: right;
+          width: 600px;
+          margin-right: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="left">
+      <h1>hii...</h1>
+      Enter Your Name<input type="text">
+    </div>
+    <div class="right">
+      <pre>
+        <code class="html js">
+          <script type="text/javascript">
+            function viewSource(){
+              var source = "<html>";
+          source += document.getElementsByTagName('html')[0].innerHTML;
+          source += "</html>";
+          source = source.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+          source = "<pre>"+source+"</pre>";
+          document.writeln(source);
             }
-          viewSource();
-       </script>
-    </code>
-  </pre>
-</div>
-</body>
+            viewSource();
+          </script>
+      </code>
+    </pre>
+    </div>
+  </body>
 </html>
